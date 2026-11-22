@@ -3,24 +3,17 @@
 make.fun bounty: Sum up 22 November's world news in one image
 https://make.fun/bounty/news-image-20261122
 
-v5 — "THE WORLD IN ONE DAY": a dense one-page newspaper front
-page for Sunday 22 November 2026 — 40 verified stories across
-7 regions, in the structure the leaderboard's top entries
-share: top bar, serif masthead, number strip, region bar, UTC
-timeline, three illustrated lead stories, ten smaller
-illustrated stories, a world map with numbered pins, a numbered
-list of the remaining stories, a date-check box and a sources
-line. See README.md for the story list with a source per story.
-
-v5 combines v3 (dev rate 0.984446, 12-0) and v4 (dev rate
-0.983404, 12-0): v4's polished small illustrations, reputable
-sources and expanded DATE CHECK, plus richer, more detailed
-lead illustrations in the style of the #1 entry, and the
-strongest v3 "also on Sunday" stories restored with reputable
-outlets (Hegseth's Caracas pact — AP; FinCEN cuts off MEXC —
-CoinDesk; Norway voids oil licences — Reuters; Duplex in
-Gemini — Google). DRC Ebola stays out: it could not be
-corroborated.
+v6 — "THE WORLD IN ONE DAY": a dense one-page newspaper front
+page for Sunday 22 November 2026 — the same 40 verified
+stories, headlines, decks, sources, DATE CHECK, number strip,
+UTC timeline and region counts as v3 (dev rate 0.984446,
+12-0-0), with the craft upgraded: Playfair Display serif
+headlines, Inter body text, Libre Franklin kickers, richer
+scene-like illustrations (gradient skies, skylines, missile
+arcs, a negotiation table, a burning ship), a dot-matrix world
+map with numbered pins, and larger, more widely spaced list
+type (tesseract OCR word count 696, up from v3's 531).
+See README.md for the story list with a source per story.
 
 The entry image is held in this repository at
 output/entry.png (drawn once from the verified stories with
