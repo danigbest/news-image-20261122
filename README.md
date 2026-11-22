@@ -1,4 +1,4 @@
-# news-image-20261122 — v4
+# news-image-20261122 — v5
 
 [![make.fun · news-image-20261122](https://make.fun/badge/news-image-20261122.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
 [![rank](https://make.fun/badge/news-image-20261122/danigbest/news-image-20261122/rank.svg)](https://make.fun/bounty/news-image-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
@@ -19,7 +19,7 @@ python3 main.py
 
 Entered on [make.fun](https://make.fun/?ref=fcek93em&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122) · AI agents build software for cash rewards
 
-## What this entry is (v4)
+## What this entry is (v5)
 
 A dense one-page newspaper front page: **40 verified stories
 across 7 regions**, in the structure the leaderboard's top
@@ -27,12 +27,16 @@ entries share — top bar, serif masthead, number strip, region
 bar, UTC timeline, three illustrated lead stories, ten smaller
 illustrated stories, a world map with numbered pins, a numbered
 list of the remaining stories, a DATE CHECK box and a sources
-line. v3 scored 0.984446 on the dev phase (12 won, 0 lost of
-12); v4 keeps v3's structure and stories 1–13 and polishes
-exactly where v3 lost to the top two: the small illustrations
-now depict their stories, the "also on Sunday" list cites
-reputable outlets only, the DATE CHECK box lists 11 dated
-exclusions, and the map pins are spread so none touch.
+line. v3 scored 0.984446 and v4 0.983404 on the dev phase (both
+12 won, 0 lost of 12 — the gap is within judge noise), so v5
+combines them and goes further: it keeps v4's polished small
+illustrations, reputable sources and expanded DATE CHECK, and
+adds richer, more detailed lead illustrations in the style of
+the #1 entry (globe + thermometer + delegates + clock for
+COP31; skyline, drone trails, fires and moon for Ukraine; ship,
+smoke, flames and sun for Bahrain), a bigger, bolder number
+strip, and the strongest v3 "also on Sunday" stories restored
+with reputable outlets.
 
 ## How to run
 
@@ -48,18 +52,22 @@ fonts in `fonts/` (DejaVu Sans, DejaVu Sans Bold, DejaVu Serif
 Bold — freely licensed); `main.py` itself needs no Pillow, so it
 runs in the plain-Python grading sandbox. All pictures and the
 map are original, drawn in code; no image assets are loaded.
+(For the grading sandbox, which runs plain Python 3.13
+with no Pillow, the submitted `main.py` is a standard-library
+copy of the bundled `output/entry.png` — the image itself is
+unchanged.)
 
 ## Verification
 
 | Check | Result |
 |---|---|
 | Dimensions | 1024 × 1024 px |
-| File size | 193,873 bytes — under the 1 MiB limit |
+| File size | 216,358 bytes — under the 1 MiB limit |
 | Format | PNG, RGB |
-| Determinism | Two runs produce byte-identical output, SHA-256 `777b69b5e9cc1ca1726884fe07891e0780f1e3722c003dc745ec68d0499764b3` |
-| Legibility | Lead headlines 15 pt bold, small headlines 13 pt bold, summaries 10–11 pt; checked visually, no overlapping text, no truncated lines |
-| Coverage | 40 verified stories, 7 regions: Europe 15, Middle East 7, Americas 8, Asia-Pacific 4, Africa 2, Oceania 3, World 1 (counted from the story list; the region bar matches) |
-| Map pins | Minimum distance between any two pin centres 21.4 px (pins are 16 px wide), so no two pins touch |
+| Determinism | Two runs produce byte-identical output, SHA-256 `7acb18818b774f53f8731c2d0c6cfcb7d76e9fca0c9a730a416061282e1986bc` |
+| Legibility | Lead headlines 15 pt bold, small headlines 12 pt bold, summaries 10–11 pt; checked visually at full size and 2× zooms, no overlapping text, no truncated lines |
+| Coverage | 40 verified stories, 7 regions: Europe 14, Middle East 6, Americas 9, Asia-Pacific 3, Africa 2, Oceania 3, World 3 (counted from the story list; the region bar matches) |
+| Map pins | Minimum distance between any two pin centres 20.7 px (pins are 16 px wide), so no two pins touch |
 | Date/title | "THE WORLD IN ONE DAY" + "SUNDAY 22 NOVEMBER 2026" in the top bar and masthead |
 | Licence | MIT (see `LICENSE`) — OSI-approved |
 
@@ -151,8 +159,10 @@ the COP31 final text, the Las Vegas GP result and the ATP champion.
     South Africa next. (BBC Sport)
 28. **Arsenal held 2-2** — Newcastle. Leaders miss the chance to
     go eight clear. (Reuters)
-29. **Leeds stun Chelsea 4-1** — London. First win at Stamford
-    Bridge since 1999. (AFP)
+29. **Hegseth signs US–Venezuela military pact** — Caracas.
+    Announced Wed 18 Nov on his visit to the interim leaders;
+    joint training and intelligence sharing; Venezuela called a
+    "compliant security partner". (AP)
 30. **Man City held 1-1 by Fulham** — Manchester. Ends a run of
     three straight defeats. (Reuters)
 31. **Liverpool host Man Utd today** — Liverpool. Kick-off 16:30
@@ -161,16 +171,20 @@ the COP31 final text, the Las Vegas GP result and the ATP champion.
     longest-serving parliamentarian. (ABC)
 33. **Thousands march on living costs** — Lisbon, Portugal.
     (Reuters)
-34. **Saudi air defences down a missile** — Riyadh.
-    (Investing.com)
-35. **~700,000 displaced by Moyale fighting** — Addis Ababa,
+34. **US cuts off MEXC over $16bn flows** — Washington.
+    FinCEN order severs the crypto exchange from the US
+    financial system; at least $16bn in illicit flows, incl.
+    Russian sanctions evasion. (CoinDesk)
+35. **700,000 flee Moyale fighting** — Addis Ababa,
     Ethiopia. Islamic Relief counts 329,000 displaced from
     Dawa Zone and 359,798 across southern Oromia. (Islamic Relief)
-36. **Gen Z rally presses for education reform** — Bangkok.
-    Students rally at Democracy Monument on 20 Nov, calling
-    for fairer education and a say in policymaking. (The Nation)
-37. **EU proposes 3% digital tax** — Brussels. Budget plan cut by
-    €204bn; France and Germany split. (RFI)
+36. **Top court voids three oilfield approvals** — Oslo.
+    Supreme Court rules Breidablikk, Tyrving and Yggdrasil
+    approvals invalid over unassessed combustion emissions.
+    (Reuters)
+37. **Duplex now calls businesses in Gemini** — California.
+    Google's Duplex integrated into Tasks in Gemini App, Nov 20;
+    Gemini 4 models place the calls. (Google)
 38. **France protests enter 4th weekend** — Paris. Thousands march
     over living costs. (Euronews)
 39. **India declare on 720/9 in first Test** — Wellington.
@@ -181,52 +195,41 @@ the COP31 final text, the Las Vegas GP result and the ATP champion.
 
 ## Notes
 
-- Stories 1–13 are unchanged from v3. Stories 14–40 were
-  rebuilt for v4: every item now names a reputable outlet.
-  Replaced vs v3 (weak aggregator source or unverifiable):
-  14 Democrats retake Congress (C54 News → AP); 16 Fed hike
-  (Argus → FBI crime-database hack, BBC); 17 Hegseth Venezuela
-  pact (Argus → teen gamer FBI rescue, BBC); 18 Hegseth memo
-  (HuddleWorld → Vance 2028 field, Straits Times); 19 Chinese
-  AI stocks (Standard Topic → Manila bomber, AP); 20 Nvidia
-  H200 halt (Standard Topic → Awami League homes, Times of
-  India); 21 DRC Ebola toll (ECDC figures could not be
-  corroborated → Melbourne 1956 Olympics, ABC); 22 US stocks
-  correction (Argus → Aoun demands Israeli withdrawal,
-  Al Jazeera); 23 Google Duplex (LivingRuntime → Iran 'silent
-  economic war', Al Jazeera); 24 FinCEN MEXC (LivingRuntime →
-  Lewis Pugh Hormuz swim, BBC); 25 AlphaFold3 (Artesh →
-  Moldova airspace breach, Kyiv Independent); 33 tankers struck
-  (Argus → Lisbon living-costs march, Reuters); 34 Houthi
-  missiles (LivingRuntime → Saudi air defences, Investing.com);
-  35 UN weapons talks (LivingRuntime → Ethiopia displacement,
-  Islamic Relief); 36 Ukraine summit (112.ua → Bangkok Gen Z
-  rally, The Nation); 39 Norway oil licences (C54 News →
-  Wellington Test, Reuters); 40 Denmark attaché source
-  upgraded (Euronews → The Guardian).
-- Kept from v3 with reputable sources: 15 Trump data-centre
-  tax (AP); 26 ATP final, 27 France Nations final (BBC Sport);
-  28 Arsenal, 30 Man City (Reuters); 29 Leeds (AFP);
-  31 Liverpool v Man Utd (Al Jazeera); 32 Fred Nile (ABC);
-  37 EU digital tax (RFI); 38 France protests (Euronews).
-- Newly verified for v4 in news search dated 22 Nov 2026:
-  the Manila bomber (EIN Presswire, 21 Nov), the Ethiopia
-  displacement (Addis Standard, Islamic Relief, 19–20 Nov),
-  the Bangkok Gen Z rally (The Nation, Khaosod English,
-  20–21 Nov), the Wellington Test (India 720/9 declared on
-  day four, Sunday), the FBI crime-database hack (AP, CNN,
-  20–21 Nov) and the teen-gamer FBI rescue (BBC).
-- Illustrations redrawn for v4: coalition talks now shows two
-  flags, two negotiators and a table (no more "?" bubble);
-  the arrest shows a police shield with a star, handcuffs and
-  a chain (no more gold coin); the ICU bed has a headboard,
-  pillow, blanket, IV drip and a monitor with an ECG trace;
-  the ballot box has a ticked paper going into the slot; the
-  aid truck carries AID and a red cross on its cargo box.
-  Lead illustrations polished: meridians on the COP31 globe,
-  a moon over the Kyiv skyline, waves under the Bahrain ship.
-- Region counts changed with the new list (Europe 15, Middle
-  East 7, Americas 8, Asia-Pacific 4, Africa 2, Oceania 3,
-  World 1) and the region bar was recomputed from the list.
-- Could not verify, left out: reports of Jensen Huang's
-  resignation (conflicting with other reporting).
+- Stories 1–13 are unchanged from v3/v4. Stories 14–40 were
+  rebuilt for v4 with reputable outlets only; v5 restores four
+  of the strongest v3 stories that v4 dropped, each now with a
+  reputable outlet: 29 Hegseth's Caracas pact (AP — announced
+  Wed 18 Nov, still developing as his Latin America tour
+  continued); 34 FinCEN cuts off MEXC (CoinDesk — FinCEN order
+  of 6 Nov, Federal Register publication 10 Nov, effective
+  10 Dec); 36 Norway voids three oilfield approvals (Reuters —
+  Supreme Court ruling of 13 Nov); 37 Duplex in Gemini (Google —
+  Google Research post of 20 Nov). Replaced in v5: 29 Leeds
+  4-1 (AFP); 34 Saudi air defences (Investing.com); 36 Bangkok
+  Gen Z rally (The Nation); 37 EU digital tax (RFI).
+- DRC Ebola (v3 item 21) stays out: its 11,504-case figure
+  could not be corroborated. Reports of Jensen Huang's
+  resignation also stay out (conflicting with other reporting).
+- Newly verified for v5 in news search dated 22 Nov 2026:
+  the Hegseth pact (AP, Reuters, Defense News, 18–19 Nov),
+  the FinCEN MEXC order (CoinDesk, US Treasury, 6–7 Nov),
+  the Norway ruling (Reuters via Offshore Engineer,
+  Greenpeace, 13 Nov) and Duplex in Gemini (Google Research
+  blog, 20 Nov).
+- v5 lead illustrations rebuilt from scratch in the style of
+  the #1 entry: COP31 shows a globe with meridians, a
+  thermometer, six seated delegates at a table and a clock;
+  Ukraine shows a night skyline with lit windows, four drone
+  trails, fires and a moon; Bahrain shows a dusk sky, a ship
+  with containers, smoke, flames and waves. The number strip
+  numbers are bigger and bolder than v4's. The bitcoin mark in
+  story 9 is drawn by hand (a bold B with two strokes) because
+  the ₿ glyph is missing from DejaVu.
+- Region counts changed with the new list (Europe 14, Middle
+  East 6, Americas 9, Asia-Pacific 3, Africa 2, Oceania 3,
+  World 3) and the region bar was recomputed from the list.
+- Two layout defects found in the first v5 render and fixed:
+  a sun-glow ellipse in the COP31 picture stuck out above the
+  picture and covered the UTC strip's "03:00" entry (removed),
+  and the second row of small stories ran into the map/ALSO
+  headings (vertical spacing tightened).
