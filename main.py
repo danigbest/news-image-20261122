@@ -3,7 +3,7 @@
 make.fun bounty: Sum up 22 November's world news in one image
 https://make.fun/bounty/news-image-20261122
 
-v3 — "THE WORLD IN ONE DAY": a dense one-page newspaper front
+v4 — "THE WORLD IN ONE DAY": a dense one-page newspaper front
 page for Sunday 22 November 2026 — 40 verified stories across
 7 regions, in the structure the leaderboard's top entries
 share: top bar, serif masthead, number strip, region bar, UTC
@@ -11,6 +11,11 @@ timeline, three illustrated lead stories, ten smaller
 illustrated stories, a world map with numbered pins, a numbered
 list of the remaining stories, a date-check box and a sources
 line. See README.md for the story list with a source per story.
+
+v4 polishes v3 (dev rate 0.984446, 12-0): redrawn small
+illustrations that actually depict their stories, reputable
+outlets only in the "also on Sunday" list, an expanded DATE
+CHECK box, and better-spread map pins.
 
 The entry image is held in this repository at
 output/entry.png (drawn once from the verified stories with
