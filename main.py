@@ -3,16 +3,16 @@
 make.fun bounty: Sum up 22 November's world news in one image
 https://make.fun/bounty/news-image-20261122
 
-v6 — "THE WORLD IN ONE DAY": a dense one-page newspaper front
-page for Sunday 22 November 2026 — the same 40 verified
-stories, headlines, decks, sources, DATE CHECK, number strip,
-UTC timeline and region counts as v3 (dev rate 0.984446,
-12-0-0), with the craft upgraded: Playfair Display serif
-headlines, Inter body text, Libre Franklin kickers, richer
-scene-like illustrations (gradient skies, skylines, missile
-arcs, a negotiation table, a burning ship), a dot-matrix world
-map with numbered pins, and larger, more widely spaced list
-type (tesseract OCR word count 696, up from v3's 531).
+v7 — "THE WORLD IN ONE DAY": a dense one-page newspaper front
+page for Sunday 22 November 2026 — 40 stories rebuilt for the
+day (dev rate of the v3 content it replaces: 0.984446, 12-0-0),
+with the craft from v6: Playfair Display serif headlines, Inter
+body text, Libre Franklin kickers, richer scene-like illustrations
+(gradient skies, skylines, missile arcs, a negotiation table, a
+burning ship), a dot-matrix world map with numbered pins, and
+larger, more widely spaced list type (tesseract OCR word count
+801, up from v6's 696 and v3's 531). Each story is tagged
+CONFIRMED / REPORTED / CLAIM / FORECAST / ONGOING.
 See README.md for the story list with a source per story.
 
 The entry image is held in this repository at
