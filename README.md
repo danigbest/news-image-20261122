@@ -31,8 +31,12 @@ https://make.fun/bounty/news-image-20261122
 ## What this entry is
 
 A one-page newspaper front page for **Sunday 22 November 2026**,
-rendered as a 1024×1024 PNG by `main.py` (Python 3.13, Pillow only,
-no network, no randomness, no clock).
+a 1024×1024 PNG held at `output/entry.png`. `main.py` (Python 3.13,
+standard library only, no network, no randomness, no clock)
+copies those exact bytes to `/output/entry.png` — the copy
+approach the bounty rules name as the simplest entry, because
+the grading sandbox runs plain Python 3.13 with no Pillow and
+a read-only program directory.
 
 - Lead story, biggest: **Ukraine** — largest attack of the year
   (110 missiles, 400+ drones; Zelenskyy called Putin a "killer";
@@ -57,14 +61,15 @@ summary comes from the verified 22 Nov 2026 news list in the brief.
 
 ```bash
 python3 main.py
-# writes output/entry.png (and /output/entry.png when that
-# directory exists, as in the make.fun grading sandbox)
+# writes /output/entry.png (MAKEFUN_OUTPUT_DIR when set, as in
+# the make.fun grading sandbox)
 ```
 
-Requirements: Python 3.13, Pillow. Fonts are bundled in `fonts/`
-(DejaVu Sans, DejaVu Sans Bold, DejaVu Serif Bold — freely
-licensed), so rendering is identical on any machine; system DejaVu
-paths are only a fallback.
+Requirements: Python 3.13, standard library only. The image was
+drawn once from the verified stories with Pillow and bundled
+fonts in `fonts/` (DejaVu Sans, DejaVu Sans Bold, DejaVu Serif
+Bold — freely licensed); `main.py` itself needs no Pillow, so it
+runs in the plain-Python grading sandbox.
 
 ## News sources used
 
@@ -84,7 +89,7 @@ stories were added, and no figures were invented.
 | Legibility | Large sans-serif/serif text; title 62 pt, lead headline 34 pt, grid headlines 21 pt, grid summaries 16 pt. No overlapping text; checked visually. |
 | Coverage | 10 verified stories, grouped by War / Middle East / Gaza / Politics / Economy / Climate / World / Tech / Crypto |
 | Date/title | "THE WORLD TODAY" + "SUNDAY 22 NOVEMBER 2026" in the top bar and masthead — readable without any news feed |
-| Determinism | `main.py` run twice produces byte-identical output (same SHA-256, verified with `cmp`). No network, no `random`, no time/date calls |
+| Determinism | `main.py` copies `output/entry.png` byte for byte; two runs produce byte-identical output (SHA-256 `be75888369de066d285078c90ba0de94b77b1f25dbcb87fab4e895836dfa99b7`, verified in a grader-like run: `python3 -P -s` with `MAKEFUN_OUTPUT_DIR` set, read-only program dir, exit 0). No network, no `random`, no time/date calls |
 | Watermark/logos | None |
 | Licence | MIT (see `LICENSE`) — OSI-approved |
 
