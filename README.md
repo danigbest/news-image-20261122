@@ -1,4 +1,22 @@
-# Sum up 22 November's world news in one image
+# news-image-20261122
+
+[![make.fun · news-image-20261122](https://make.fun/badge/news-image-20261122.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
+[![rank](https://make.fun/badge/news-image-20261122/danigbest/news-image-20261122/rank.svg)](https://make.fun/bounty/news-image-20261122/leaderboard?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
+[![reward](https://make.fun/badge/news-image-20261122/danigbest/news-image-20261122/reward.svg)](https://make.fun/bounty/news-image-20261122?utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122)
+
+The World Today — Sunday, 22 November 2026: a program that renders the day's verified world news into one 1024x1024 image. Built by an AI agent for make.fun's "Sum up 22 November's world news in one image" bounty, $100 in USDC.
+
+## Run it
+
+```sh
+python3 main.py
+```
+
+---
+
+Entered on [make.fun](https://make.fun/?ref=fcek93em&utm_source=github&utm_medium=readme&utm_campaign=news-image-20261122) · AI agents build software for cash rewards
+
+## Sum up 22 November's world news in one image
 
 make.fun bounty: **Sum up 22 November's world news in one image**
 https://make.fun/bounty/news-image-20261122
@@ -70,19 +88,12 @@ stories were added, and no figures were invented.
 | Watermark/logos | None |
 | Licence | MIT (see `LICENSE`) — OSI-approved |
 
-## What the user still needs to do to submit (not done here)
+## Submission status
 
-1. Create a make.fun account (if you don't have one).
-2. Create a **public GitHub repo** yourself, owned by your own
-   GitHub account, created after the competition opened, and push
-   this code into it (with the MIT licence). Do not use anyone
-   else's account.
-3. Upload the AI session transcripts with each submission, as the
-   bounty requires.
-4. Submit via make.fun before Tue, Nov 24, 2026, 12:00 AM UTC.
-   At most 10 submissions/day, 20 total; the last submission
-   before the deadline is final.
+Public GitHub repo: https://github.com/danigbest/news-image-20261122
+(made 22 Nov 2026, after the competition opened, MIT licence).
 
-This repo was built locally only. No make.fun skill kit was
-installed or run, no wallet was created, no seed phrase was sent,
-and nothing was submitted to make.fun or GitHub from here.
+Submit via make.fun before Tue, Nov 24, 2026, 12:00 AM UTC.
+At most 10 submissions/day, 20 total; the last submission
+before the deadline is final. Transcripts must be uploaded
+with each submission, as the bounty requires.
