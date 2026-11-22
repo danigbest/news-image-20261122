@@ -4,10 +4,11 @@ make.fun bounty: Sum up 22 November's world news in one image
 https://make.fun/bounty/news-image-20261122
 
 The entry image is the 1024x1024 news front page for Sunday
-22 November 2026, held in this repository at output/entry.png
-(rendered from the verified stories in the brief; see README.md
-for the story list). This program copies those exact bytes to
-/output/entry.png, using only the Python standard library.
+22 November 2026 — 40 verified stories in a dense grid — held
+in this repository at output/entry.png (rendered from the
+verified stories listed in README.md). This program copies
+those exact bytes to /output/entry.png, using only the Python
+standard library.
 
 Why a copy, not a draw: the grading sandbox runs
 `python3 -P -s /bot/main.py` in a plain Python 3.13 image with
